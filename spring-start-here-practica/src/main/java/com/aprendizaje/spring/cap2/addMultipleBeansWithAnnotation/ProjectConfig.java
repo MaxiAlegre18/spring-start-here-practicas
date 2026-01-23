@@ -26,4 +26,10 @@ public class ProjectConfig {
 		l.setNombre("Kiki");
 		return l;
 	}
+	
+	@Bean
+	String string1() {
+		String str = "Hola mundo!";
+		return str;
+	}
 }
