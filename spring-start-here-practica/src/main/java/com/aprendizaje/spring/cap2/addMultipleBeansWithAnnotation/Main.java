@@ -26,8 +26,8 @@ public class Main {
 		/*
 		 * También se pueden generar instancias de clases ya existentes de Java.
 		 */
-		//String str = context.getBean("string1", String.class);
-		//System.out.println(str);
+		String str = context.getBean("string1", String.class);
+		System.out.println(str);
 
 	}
 
