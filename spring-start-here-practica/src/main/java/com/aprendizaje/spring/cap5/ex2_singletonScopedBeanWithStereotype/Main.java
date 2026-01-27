@@ -19,8 +19,8 @@ public class Main {
 		 * OBSERVACION 1:
 		 * En un escenario real, las aplicaciones se ejecutan en multi-hilo y podria ocurrir, que simultaneamente, ambas clases
 		 * cambien los atributos tanto como propias o como las del bean CommentRepository, si esto pasa y no hay una sincronizacion oportuna,
-		 * podria ocurrir un escenario de CONDICION DE CARRERA, por lo tatno, se sugiere usar SINGLETON para escenarios donde los
-		 * beans no puedan MUTAR los atributos.
+		 * podria ocurrir un escenario de CONDICION DE CARRERA, por lo tantno, se sugiere usar SINGLETON para escenarios donde los
+		 * beans no puedan MUTAR los atributos (aplica para cualquier clase que pueda mutar sus atributos).
 		 * 
 		 * OBSERVACION 2 (EAGER-LAZY):
 		 * Por defecto, Spring crea todos los Singleton BEANS al inicializar el Spring Context. Sin embargo, si se quisiese crear
